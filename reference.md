@@ -3,13 +3,13 @@
 ## Consent checklist (minimum)
 
 - [ ] Creator name / channel / contact
-- [ ] Scope: boleh clip jenis apa (gameplay, podcast, tutorial, vlog, ...)
-- [ ] Platform publish clipper (YT Shorts, TikTok, IG, ...)
-- [ ] Monetization: boleh / tidak / revenue share
+- [ ] Scope: allowed clip types (gameplay, podcast, tutorial, vlog, ...)
+- [ ] Clipper publish platforms (YT Shorts, TikTok, IG, ...)
+- [ ] Monetization: allowed / not allowed / revenue share
 - [ ] Credit format: on-screen, description, pinned comment
-- [ ] Watermark/logo creator wajib atau opsional
-- [ ] Review gate: creator approve sebelum publish atau post langsung
-- [ ] Retensi: hapus clip jika creator revoke
+- [ ] Creator watermark/logo required or optional
+- [ ] Review gate: creator approves before publish or direct post
+- [ ] Retention: remove clip if creator revokes consent
 
 ## Clip sheet template
 
@@ -17,7 +17,7 @@
 |---|--------|----|----|------|----------|--------|
 | 1 | URL/file | 00:01:23 | 00:01:45 | ... | 9:16 Shorts | draft |
 
-## FFmpeg patterns (delegasi `ffmpeg-processing`)
+## FFmpeg patterns (delegate to `ffmpeg-processing`)
 
 ```bash
 # Trim + scale 9:16 center crop
@@ -30,18 +30,18 @@ ffmpeg -ss START -i input.mp4 -t DURATION \
 
 | Source | License note |
 |--------|----------------|
-| Wikimedia Commons | Cek per file (CC0, CC BY, ...) - catat atribusi |
-| Creator-provided stems | Izin eksplisit di consent |
-| Platform audio library | Ikuti ToS platform target |
-| Synth/local generate | Royalty-free bila generate sendiri |
+| Wikimedia Commons | Check per file (CC0, CC BY, ...) — record attribution |
+| Creator-provided stems | Explicit permission in consent |
+| Platform audio library | Follow target platform ToS |
+| Synth/local generate | Royalty-free when self-generated |
 
-**Hindari:** chart music, random "no copyright" tanpa verifikasi.
+**Avoid:** chart music, random "no copyright" without verification.
 
-## Platform reminders (bukan legal advice)
+## Platform reminders (not legal advice)
 
-- YouTube: atribusi + fair use **bukan** otomatis aman - ikuti consent creator
-- Shorts/Reels: hormati music library masing-masing platform
-- Jangan bypass DRM atau download melawan ToS
+- YouTube: attribution + fair use is **not** automatically safe — follow creator consent
+- Shorts/Reels: respect each platform's music library
+- Do not bypass DRM or download against ToS
 
 ## Artifact paths
 
